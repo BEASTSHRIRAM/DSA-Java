@@ -1,0 +1,23 @@
+# Ignore Java class files
+*.class
+
+# Ignore JAR/WAR/EAR archives
+*.jar
+*.war
+*.ear
+
+# Ignore logs
+*.log
+
+# Ignore build directories
+bin/
+target/
+
+# Ignore IDE/project files
+.idea/
+.vscode/
+*.iml
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
