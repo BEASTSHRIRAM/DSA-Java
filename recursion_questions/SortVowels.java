@@ -12,15 +12,14 @@ public class SortVowels {
         
     }
     static String Sortvowels(String s){
-        Set<Character> vs = new HashSet<>(Arrays.asList('a', 'e', 'i', 'o', 'u', 
-                                                              'A','E','I','O','U'));
+        Set<Character> vs = new HashSet<>(Arrays.asList('a', 'e', 'i', 'o', 'u','A','E','I','O','U'));
         List<Character> vl = new ArrayList<>();
         for (char c : s.toCharArray()) {
             if (vs.contains(c)) {
                 vl.add(c);
             }
         }
-        Collections.sort(vl);
+        Collections.sort(vl);//EeOe se EOee
         StringBuilder res = new StringBuilder();
         int vowelIndex = 0;
         for (char c : s.toCharArray()) {
