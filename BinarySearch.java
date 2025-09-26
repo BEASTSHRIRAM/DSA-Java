@@ -2,6 +2,7 @@ public class BinarySearch {
     public static void main(String[] args) {
         int[] arr={2,4,6,8,11,12,14,20,36,48};
         System.out.println("The index of the searched element is="+binarysearch(arr,37));
+        
     }
     static int binarysearch(int[] arr,int target){
         int start =0;
@@ -24,4 +25,5 @@ public class BinarySearch {
 
 
     }
+
 }
