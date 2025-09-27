@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Permu {
     public static void main(String[] args) {
@@ -59,5 +60,6 @@ public class Permu {
         }
         return count;
     }
+
 
 }
