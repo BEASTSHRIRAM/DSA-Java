@@ -3,7 +3,7 @@ import java.util.HashMap;
 import java.util.TreeSet;
 
 public class Flood {
-    public static void main(String[] args) {
+    public static void main(String[] argjavas) {
         int arr[]={1,2,0,0,2,3};
         System.out.println(Arrays.toString(FloodInCity(arr)));
         
