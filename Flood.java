@@ -3,10 +3,9 @@ import java.util.HashMap;
 import java.util.TreeSet;
 
 public class Flood {
-    public static void main(String[] argjavas) {
+    public static void main(String[] args) {
         int arr[]={1,2,0,0,2,3};
         System.out.println(Arrays.toString(FloodInCity(arr)));
-        
     }
     static int[] FloodInCity(int[] rains){
         int ans[]=new int[rains.length];
