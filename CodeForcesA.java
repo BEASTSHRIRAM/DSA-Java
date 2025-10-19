@@ -6,7 +6,7 @@ public class CodeForcesA {
         int t=sc.nextInt();
         for(int i=0;i<t;i++){
             int n=sc.nextInt();
-            int res=2*n-2;
+            int res=(n-1)+(n-2)+1;
             System.out.println(res);
         }
         sc.close();
