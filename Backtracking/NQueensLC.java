@@ -1,10 +1,12 @@
+package Backtracking;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class NQueensLC {
     public static void main(String[] args) {
         int n=4;
-        System.out.println(nqueen(n));
+        System.out.println(solveNQueens(n));
     }
     static List<List<String>> solveNQueens(int n){
         List<List<String>> ans=new ArrayList<>();

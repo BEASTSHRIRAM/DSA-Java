@@ -4,7 +4,7 @@ public class swiminrisingwater {
     public static void main(String[] args) {
         
     }
-    Public int swimInWater(int[][] grid) {
+    public int swimInWater(int[][] grid) {
         int n = grid.length;
         int[][] dirs = {{1,0}, {-1,0}, {0,1}, {0,-1}};
         boolean[][] visited=new boolean[n][n];
@@ -15,7 +15,7 @@ public class swiminrisingwater {
             int time=top[0],r=top[1],c=top[2];
             if (r==n-1 &&c==n-1) return time;
             if (visited[r][c])continue;
-            visited[r][c]=true
+            visited[r][c]=true;
             for (int[] d : dirs) {
                 int nr = r + d[0], nc = c + d[1];
                 if (nr >= 0 && nc >= 0 && nr < n && nc < n && !visited[nr][nc]) {

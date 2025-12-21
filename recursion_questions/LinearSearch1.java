@@ -1,6 +1,8 @@
+package recursion_questions;
+
 import java.util.ArrayList;
 
-public class LinearSearch{
+public class LinearSearch1 {
     public static void main(String[] args) {
         int[] arr={1,2,3,4,7,7};
         System.out.println(search(arr, 0, 7));
