@@ -136,4 +136,47 @@ public class LL {
             return "Node(value=" + value + ")";
         }
     }
+    //questions
+    //1. remove duplicates
+    public void duplicate(){
+        Node node =head;
+        while(node.next!=null){
+            if(node.value==node.next.value){
+                node.next=node.next.next;
+                size--;
+            }else{
+                node=node.next;
+            }
+        }
+        tail=node;
+        tail.next=null;
+    }
+    //2.Merge two lists and sort them
+    public static LL merge(LL list1, LL list2){
+        Node l1=list1.head;
+        Node l2=list2.head;
+        LL ans=new LL();
+        while(l1!=null&&l2!=null){
+            if(l1.value<l2.value){
+                ans.insertLast(l1.value);
+                l1=l1.next;
+            }else{
+                ans.insertLast(l2.value);
+                l2=l2.next;
+            }
+        }
+        while(l1!=null){
+            ans.insertLast(l1.value);
+            l1=l1.next;
+        }
+        while(l2!=null){
+            ans.insertLast(l2.value);
+            l2=l2.next;
+        }
+        return ans;
+    }
+    //Linked list Cycle return true if the linkedlist
+    //1. linked list cycle detection
+    //2.give the length of the cycle
+    //intuition:when you detect fast==slow keep the fast at that node and traverse the slow pointer until it again equals to fast when in is equal return the count
 }
