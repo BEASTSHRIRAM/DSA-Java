@@ -38,15 +38,23 @@ public class Linked {
 //        list.insertRec(88,1);
 //        list.duplicate();
 //        list.display();
-        LL l1=new LL();
-        LL l2=new LL();
-        l1.insertLast(1);
-        l1.insertLast(2);
-        l1.insertLast(4);
-        l2.insertLast(1);
-        l2.insertLast(3);
-        l2.insertLast(4);
-        LL ans= LL.merge(l1,l2);
-        ans.display();
+//        LL l1=new LL();
+//        LL l2=new LL();
+//        l1.insertLast(1);
+//        l1.insertLast(2);
+//        l1.insertLast(4);
+//        l2.insertLast(1);
+//        l2.insertLast(3);
+//        l2.insertLast(4);
+//        LL ans= LL.merge(l1,l2);
+//        ans.display();
+        LL list= new LL();
+        for(int i=5;i>0;i--){
+            list.insertLast(i);
+        }
+        list.display();
+//
+        list.reverse();
+        list.display();
     }
 }

@@ -175,6 +175,73 @@ public class LL {
         }
         return ans;
     }
+    //LETS SOLVE BUBBLE SORT
+    public void bubbleSort() {
+        bubbleSort(size - 1, 0);
+    }
+
+    private void bubbleSort(int row, int col) {
+        if (row == 0) {
+            return;
+        }
+
+        if (col < row) {
+            Node first = get(col);
+            Node second = get(col + 1);
+
+            if (first.value > second.value) {
+                // swap
+                if (first == head) {
+                    head = second;
+                    first.next = second.next;
+                    second.next = first;
+                } else if (second == tail) {
+                    Node prev = get(col - 1);
+                    prev.next = second;
+                    tail = first;
+                    first.next = null;
+                    second.next = tail;
+                } else {
+                    Node prev = get(col - 1);
+                    prev.next = second;
+                    first.next = second.next;
+                    second.next = first;
+                }
+            }
+            bubbleSort(row, col + 1);
+        } else {
+            bubbleSort(row - 1, 0);
+        }
+    }
+    //RECURSION REVERSE
+    private void reverseNode(Node node){
+        if(node ==tail){
+            head=tail;
+            return;
+        }
+        reverseNode(node.next);
+        tail.next=node;
+        tail=node;
+        tail.next=null;
+    }
+    //inplace reversal of linked list
+    public void reverse(){
+        if(size<2){
+            return;
+        }
+        Node prev=null;
+        Node curr=head;
+        Node next=curr.next;
+        while(curr!=null){
+            curr.next=prev;
+            prev=curr;
+            curr=next;
+            if(next!=null){
+                next=next.next;
+            }
+        }
+        head=prev;
+    }
     //Linked list Cycle return true if the linkedlist
     //1. linked list cycle detection
     //2.give the length of the cycle
