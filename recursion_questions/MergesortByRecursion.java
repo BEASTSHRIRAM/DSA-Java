@@ -1,9 +1,11 @@
+package recursion_questions;
+
 import java.util.Arrays;
 
 public class MergesortByRecursion{
     public static void main(String[] args) {
         int[] arr={2,3,6,4,5};
-        mergersortinplace(arr,0,arr.length);
+        mergersort(arr);
         System.out.println(Arrays.toString(arr));
         
     }
