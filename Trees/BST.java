@@ -1,6 +1,9 @@
 package Trees;
 
-class BST {
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class BST {
     public class Node{
         private int value;
         private int height;
@@ -84,5 +87,42 @@ class BST {
             return true;
         }
         return Math.abs(height(node.left)-height(node.right))<=1&&isbalanced(node.left)&&isbalanced(node.right);
+    }
+    public void LevelSum(){
+        int h=height(root);
+        for (int i = 0; i <=h; i++) {
+            int sum=sumAtLevel(root,i);
+            System.out.println("Level"+i+"Sum ="+sum);
+
+        }
+    }
+    private int sumAtLevel(Node node,int level){
+        if(node==null){
+            return 0;
+        }
+        if(level==0){
+            return node.value;
+        }
+        return sumAtLevel(node.left,level-1)+sumAtLevel(node.right,level-1);
+    }
+    public void level(){
+        if (root==null){
+            return;
+        }
+        Queue<Node> q=new LinkedList<>();
+        q.add(root);
+        while(!q.isEmpty()){
+            Node curr=q.poll();
+            System.out.print(curr.value+"->");
+            if (curr.left!=null){
+                q.add(curr.left);
+
+            }
+            if (curr.right!=null){
+                q.add(curr.right);
+
+            }
+        }
+        System.out.println("END");
     }
 }

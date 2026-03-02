@@ -1,5 +1,8 @@
+package recursion_questions;
+
 public class Factorial {
     public static void main(String[] args) {
+
         System.out.print(fac(5));
     }
     static int fac(int n){
