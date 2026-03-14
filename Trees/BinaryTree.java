@@ -101,9 +101,9 @@ public BinaryTree() {
         if(node==null){
             return;
         }
-        preOrder(node.left);
+        inOrder(node.left);
         System.out.println(node.value+ "  ");
-        preOrder(node.right);
+        inOrder(node.right);
 
     }
     public void postOrder(){
@@ -113,8 +113,8 @@ public BinaryTree() {
         if(node==null){
             return;
         }
-        preOrder(node.right);
-        preOrder(node.left);
+        postOrder(node.right);
+        postOrder(node.left);
         System.out.println(node.value+ "  ");
     }
 
