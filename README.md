@@ -6,22 +6,7 @@ Welcome to my **Data Structures and Algorithms (DSA)** repository! Whether you'r
 
 ---
 
-##  Support This Project
 
-If you find this repository helpful, please consider **starring** it! 
-
-<div align="center">
-  <h3> <a href="https://github.com/BEASTSHRIRAM/DSA-Java/stargazers">Click Here to Star the Repository</a> </h3>
-</div>
-
-**Why Star a Repository?**
-- **For You:** Starring acts as a bookmark. It saves this project to your GitHub account so you can easily find it later when you need to study or reference code.
-- **For the Project:** Stars boost the repository's visibility in GitHub's search and recommendation algorithms, helping other developers discover and learn from it.
-- **For the Community:** It builds social proof, encourages open-source contributions, and motivates continuous updates to the codebase!
-
-*(If you are new to GitHub, just click the "Star" button at the top right of this page. It's completely free and greatly appreciated!)*
-
----
 
 ##  LeetCode Solutions
 
@@ -47,7 +32,7 @@ Here are some of the popular LeetCode problems I've solved, mapped directly to t
 
 ---
 
-## 📂 Project Structure and Topics
+## Project Structure and Topics
 
 Below is a comprehensive list of all fundamental topics covered in this repository. 
 
@@ -78,11 +63,11 @@ Below is a comprehensive list of all fundamental topics covered in this reposito
 
 ---
 
-## 🚀 How to Use
+## How to Use
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+   git clone https://github.com/BEASTSHRIRAM/DSA-Java.git
    ```
 2. **Explore the folders:** Navigate through the directories to find the topic you are interested in.
 3. **Run the code:** Each Java file typically contains the solution or implementation of the concept named after the file. You can compile and run them using your favorite IDE or the command line.
